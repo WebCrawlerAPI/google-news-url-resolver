@@ -1,0 +1,52 @@
+{
+  "name": "@webcrawlerapi/google-news-url-resolver",
+  "version": "0.1.0",
+  "description": "Resolve news.google.com article URLs to the original publisher URLs. Zero dependencies, no browser.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./src/index.d.ts",
+  "bin": {
+    "google-news-url-resolver": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.3"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:live": "LIVE=1 node --test"
+  },
+  "keywords": [
+    "google-news",
+    "google news",
+    "url",
+    "decoder",
+    "resolver",
+    "rss",
+    "news",
+    "scraping"
+  ],
+  "author": "WebCrawlerAPI (https://webcrawlerapi.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/WebCrawlerAPI/google-news-url-resolver#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebCrawlerAPI/google-news-url-resolver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebCrawlerAPI/google-news-url-resolver/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
